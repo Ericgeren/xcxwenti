@@ -43,7 +43,7 @@ export default {
     	var fxData = {
       	title: '测测你潜在的企业家画像', // 分享标题
       	desc: '企业服务云认为我有杰克.韦尔奇的潜质', // 分享描述
-      	link: Config.URL, // 分享链接
+      	link: Config.URL+"#/ad", // 分享链接
       	imgUrl: Config.URL+'a_d_bg.jpg', // 分享图标
       	type: '', // 分享类型,music、video或link，不填默认为link
       	dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空

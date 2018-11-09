@@ -58,7 +58,7 @@ html,body,#app{
 /* 选择题文字样式 */
 .text{
   font-family: JOKERMAN;
-  font-size: 17px;
+  font-size: 18px;
   margin-left: 10px;
   color: #6f6e6e;
   font-weight: lighter;
