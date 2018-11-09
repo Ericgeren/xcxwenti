@@ -1,0 +1,21 @@
+.block{
+  width: 5.1rem;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 4.24rem;
+  left: 1.5rem;
+}
+.block .line{
+  display: flex;
+  flex-direction: row;
+}
+.block .line .img{
+  width: 0.8rem;
+  height: 0.6rem;
+  margin-top: 0.3rem;
+  /* padding-bottom: 0.2rem; */
+}
+.block .line .text{
+  align-self:center;
+}

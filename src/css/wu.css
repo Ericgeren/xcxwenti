@@ -1,0 +1,57 @@
+
+.block{
+  width: 5.1rem;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 4.24rem;
+  left: 1.5rem;
+}
+.block .line{
+  height: 1.2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.block .line .text{
+  align-self:center;
+}
+.img_fu{
+  align-self:center;
+  width: 0.8rem;
+}
+.img_1{
+  align-self:center;
+  background: url(../assets/a1.png) no-repeat;
+  background-size: cover;
+  width: 0.6rem;
+  height: 0.48rem;
+}
+.img_2{
+  align-self:center;
+  background: url(../assets/b1.png) no-repeat;
+  background-size: cover;
+  width: 0.5rem;
+  height: 0.5rem;
+}
+.img_3{
+  align-self:center;
+  background: url(../assets/c1.png) no-repeat;
+  background-size: cover;
+  width: 0.5rem;
+  height: 0.48rem;
+}
+.img_4{
+  align-self:center;
+  background: url(../assets/d1.png) no-repeat;
+  background-size: cover;
+  width: 0.5rem;
+  height: 0.5rem;
+}
+.img_5{
+  align-self:center;
+  background: url(../assets/e1.png) no-repeat;
+  background-size: cover;
+  width: 0.5rem;
+  height: 0.54rem;
+}
