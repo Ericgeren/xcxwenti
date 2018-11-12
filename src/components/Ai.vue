@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <img class="page_img" @click="page_img" src="../assets/a_i.png" alt="" />
+    <img class="page_img" src="../assets/a_i.png" alt="" />
 
     <div class="button_img_1"/>
     <div class="button_img" @click="page_img" />
@@ -23,6 +23,7 @@ export default {
     }
   },
   created:function(){
+    localStorage.setItem(Config.SToRAGEKEYNAme,'Ai');
     this.fenXiang();
   },
   methods:{
@@ -73,7 +74,7 @@ export default {
   position: absolute;
 }
 
-.button_img_1
+/* .button_img_1
 {
   background: url(../assets/a_bao_cun.png) no-repeat;
   background-size: cover;
@@ -84,9 +85,9 @@ export default {
   bottom: 2%;
   left: 0.7rem;
   height: 1.78rem;
-}
+} */
 .button_img{
-  background: url(../assets/a_fen_xiang.png) no-repeat;
+  /* background: url(../assets/a_fen_xiang.png) no-repeat; */
   background-size: cover;
   z-index: 2;
   position: absolute;
