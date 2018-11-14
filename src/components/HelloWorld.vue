@@ -8,8 +8,6 @@
 </template>
 
 <script>
-import Apis from '../apis'
-import Config from '../config'
 import Public from '../utils/public'
 export default {
   name: 'HelloWorld',
@@ -21,35 +19,13 @@ export default {
   mounted(){
     this.fenXiang();
   },
-  beforeCreate:function()
-  {
-    var domain = document.URL;
-    var url = Config.URL+'#/';
-    // url = 'http://localhost:8080/#/';
-    if(domain != url)
-    {
-      window.location.href = url
-    }
-  },
-  created: function () {
-    localStorage.setItem(Config.SToRAGEKEYNAme,'');
-  },
   methods:{
     fenXiang(){
-
-      this.$http.get(Apis.jssdk)
-      .then(function(res){
-        console.log(res.data);
-        // alert(JSON.stringify(res.data));
-        localStorage.setItem(Config.SToRAGEKEYNAmeJSSDK, JSON.stringify(res.data));
-        // 配置Wx分享
+        console.log('首页配置')
         Public.WxFenXiang('');
-      })
-      .catch(function(err){
-          // alert(err);
-      })
     }
   }
+
 }
 </script>
 

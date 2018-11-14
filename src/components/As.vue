@@ -41,7 +41,7 @@ export default {
     },
     fenXiang(){
     	var fxData = {
-      	title: '测测你潜在的企业家画像', // 分享标题
+      	title: '测测你的企业家画像', // 分享标题
       	desc: '企业服务云认为我有比尔盖茨的潜质', // 分享描述
       	link: Config.URL+"#/as", // 分享链接
       	imgUrl: Config.URL+'a_s_bg.jpg', // 分享图标

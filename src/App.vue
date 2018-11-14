@@ -13,9 +13,43 @@
 
 <script>
 import './css/font.css'
-
+import Config from './config'
+import Apis from './apis'
+import Public from './utils/public'
 export default {
-  name: 'App'
+  name: 'App',
+  mounted(){
+    this.fenXiang();
+  },
+  beforeCreate:function()
+  {
+    var domain = document.URL;
+    // console.log(domain)
+    var path = this.$route.path;
+    path = path.replace('/','');
+    var url = Config.URL+'#/';
+    // url = 'http://localhost:8080/#/';
+    if(domain != url)
+    {
+      window.location.href = url+path
+    }
+  },
+  created: function () {
+    localStorage.setItem(Config.SToRAGEKEYNAme,'');
+  },
+  methods:{
+    fenXiang(){
+      this.$http.get(Apis.jssdk)
+      .then(function(res){
+        console.log(res.data);
+        // alert(JSON.stringify(res.data));
+        localStorage.setItem(Config.SToRAGEKEYNAmeJSSDK, JSON.stringify(res.data));
+        // 配置Wx分享
+      })
+      .catch(function(err){
+      })
+    }
+  }
 }
 </script>
 

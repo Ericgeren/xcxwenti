@@ -41,13 +41,14 @@ export default {
     },
     fenXiang(){
     	var fxData = {
-    	title: '测测你潜在的企业家画像', // 分享标题
+    	title: '测测你的企业家画像', // 分享标题
     	desc: '企业服务云认为我有雷军的潜质', // 分享描述
     	link: Config.URL+"#/ac", // 分享链接
     	imgUrl: Config.URL+'a_c_bg.jpg', // 分享图标
     	type: '', // 分享类型,music、video或link，不填默认为link
     	dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
     	};
+      console.log('单独配置')
       Public.WxFenXiang(fxData);
     }
   }
