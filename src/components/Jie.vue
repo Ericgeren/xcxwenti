@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <img class="page_img" src="../assets/jie_bg.png" alt="" />
-    <div class="button_img" @click="tiaozhuan" />
+    <!-- <div class="button_img" @click="tiaozhuan" /> -->
     <div class="fanhui" @click="fanhui()"></div>
   </div>
 </template>
