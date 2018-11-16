@@ -55,6 +55,7 @@ export default {
     },
     daan(fen)
     {
+      console.log("答案")
       var data = JSON.parse(localStorage.getItem(Config.SToRAGEKEY));
       // 验证是否有题目没做
       if(data == null || data.length < 7)
@@ -76,15 +77,12 @@ export default {
       num[2] = datas[4]+datas[5];
       num[3] = datas[6]+datas[7];
       var leix = 0;
-      for(var i = 0 ; i < 3 ; i++)
+      for(var i = 0 ; i < 4 ; i++)
       {
-        var c = i+1;
-        if(num[i] > num[c])
+        console.log(num[i]+"|"+num[leix])
+        if(num[i] > num[leix])
         {
-        }
-        else
-        {
-          leix = c;
+          leix = i;
         }
       }
       console.log(num);
