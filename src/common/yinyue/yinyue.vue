@@ -17,7 +17,7 @@ export default {
     return {
       play:true,
       // url:Config.URL+'ntro.mp3'
-      url:'http://xcxwtw.trc-demo.com/ntro.mp3'
+      url:'http://xcxwtw.trcvc.com/ntro.mp3'
     }
   },
   mounted(){
